@@ -1,0 +1,9 @@
+# Lokal installierter Skill ohne Lizenz (siehe .claude/install-tenfold-video-edit.sh)
+.claude/skills/tenfold-video-edit/
+# Was die Skills beim Einrichten und Arbeiten selber anlegen
+.claude/kit/.venv/
+.claude/kit/vendor/
+.claude/.work/
+.claude/skills/edit-video/scripts/.env
+__pycache__/
+*.pyc

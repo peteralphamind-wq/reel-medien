@@ -1,0 +1,21 @@
+{
+  "createdAt": "2026-11-23T21:36:37+00:00",
+  "os": "linux",
+  "machine": "x86_64",
+  "python": "/usr/local/bin/python3",
+  "pythonVersion": "3.13.18",
+  "ffmpeg": "/usr/bin/ffmpeg",
+  "ffprobe": "/usr/bin/ffprobe",
+  "whisperCli": null,
+  "whisperModel": "",
+  "whisper": null,
+  "node": "/opt/node22/bin/node",
+  "npm": "/opt/node22/bin/npm",
+  "cwd": "/home/user/reel-medien/.claude/skills",
+  "ffmpegFilters": {
+    "ass": true,
+    "subtitles": true,
+    "drawtext": true
+  },
+  "nodeMajor": 22
+}
