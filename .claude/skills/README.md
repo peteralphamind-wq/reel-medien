@@ -55,4 +55,4 @@ Die Skills sind, sagen wir mal, die Rezepte. Damit auch gekocht werden kann, bra
 
 Die Befehle `auto-editor`, `whisperx`, `whisper`, `stable-ts`, `demucs`, `yt-dlp`, `scenedetect`, `ffmpeg-normalize` und `rembg` gehen direkt. Für Python-Skripte nimmst du `/opt/studio/bin/python`.
 
-Ehrlich gesagt gibt es einen Haken: In der Cloud hat es keine Grafikkarte. Schneiden, Untertitel und Ton gehen flott, aber SAM 2 und grosse Whisper-Modelle sind auf langen Clips gemütlich unterwegs. Für ein Reel von einer Minute reicht es gut.
+Ehrlich gesagt gibt es einen Haken: In der Cloud hat es keine Grafikkarte. Schneiden, Untertitel und Ton gehen flott, aber SAM 2 und grosse Whisper-Modelle sind auf langen Clips gemütlich unterwegs. Wie lange ein echtes Reel braucht, ist noch nicht gemessen.
