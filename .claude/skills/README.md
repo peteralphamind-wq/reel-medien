@@ -36,3 +36,23 @@ Der Ordner steht in `.gitignore` und wandert nie ins Repo. Weil der Skill im Ori
 ## Aktualisieren
 
 Wenn ein Autor etwas Neues rausbringt, sag Claude einfach «aktualisier den Skill von …». Dann wird der neue Stand zuerst durchgeschaut und erst danach hier abgelegt. So bleibt die Sache sauber.
+
+## Das Studio dahinter
+
+Die Skills sind, sagen wir mal, die Rezepte. Damit auch gekocht werden kann, braucht es Werkzeug in der Küche. Das liegt in der Cloud-Umgebung «reel-medien» unter `/opt/studio` und wird bei jeder neuen Sitzung automatisch installiert (dauert rund eine bis zwei Minuten, knapp 4 GB).
+
+| Wofür | Werkzeug |
+|---|---|
+| Pausen und Leerlauf rausschneiden | auto-editor |
+| Schneiden und Zusammensetzen per Code | MoviePy, ffmpeg-python, PySceneDetect |
+| Sprache zu Text mit Wort-Zeiten | WhisperX, faster-whisper, openai-whisper, stable-ts |
+| Musik und Stimme trennen | Demucs |
+| Person oder Objekt freistellen | SAM 2, rembg, MediaPipe |
+| Ton sauber machen und einpegeln | noisereduce, pyloudnorm, ffmpeg-normalize, librosa, pydub |
+| Untertitel-Dateien | pysubs2, srt |
+| Clips von Plattformen holen | yt-dlp |
+| Unterbau | PyTorch (CPU), OpenCV, onnxruntime, NumPy, SciPy, Pillow |
+
+Die Befehle `auto-editor`, `whisperx`, `whisper`, `stable-ts`, `demucs`, `yt-dlp`, `scenedetect`, `ffmpeg-normalize` und `rembg` gehen direkt. Für Python-Skripte nimmst du `/opt/studio/bin/python`.
+
+Ehrlich gesagt gibt es einen Haken: In der Cloud hat es keine Grafikkarte. Schneiden, Untertitel und Ton gehen flott, aber SAM 2 und grosse Whisper-Modelle sind auf langen Clips gemütlich unterwegs. Für ein Reel von einer Minute reicht es gut.
