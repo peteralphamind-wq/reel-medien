@@ -56,3 +56,16 @@ Die Skills sind, sagen wir mal, die Rezepte. Damit auch gekocht werden kann, bra
 Die Befehle `auto-editor`, `whisperx`, `whisper`, `stable-ts`, `demucs`, `yt-dlp`, `scenedetect`, `ffmpeg-normalize` und `rembg` gehen direkt. Für Python-Skripte nimmst du `/opt/studio/bin/python`.
 
 Ehrlich gesagt gibt es einen Haken: In der Cloud hat es keine Grafikkarte. Schneiden, Untertitel und Ton gehen flott, aber SAM 2 und grosse Whisper-Modelle sind auf langen Clips gemütlich unterwegs. Wie lange ein echtes Reel braucht, ist noch nicht gemessen.
+
+## Instagram-Skills
+
+Zwei weitere Sammlungen, diesmal nicht fürs Schneiden, sondern fürs Planen und Texten.
+
+| Befehle | Woher | Stand (Commit) | Lizenz | Braucht zusätzlich |
+|---|---|---|---|---|
+| `/ig-caption-writer`, `/ig-carousel-planner`, `/ig-hook-extractor`, `/ig-content-planner`, `/ig-hashtag-strategist`, `/ig-humanizer`, `/ig-repurposer`, `/ig-profile-optimizer`, `/ig-audience-insights` | sergebulaev/instagram-skills | `823c681` | MIT | zum Texten nichts. Publora-Key fürs Veröffentlichen, Apify-Token für Nischen-Daten, Pixfaro-Token für Grafiken |
+| `/ig` und 13 Unter-Skills (`/ig-hook`, `/ig-reel`, `/ig-caption`, `/ig-carousel`, `/ig-story`, `/ig-calendar`, `/ig-strategy`, `/ig-analyze`, `/ig-audit`, `/ig-competitor`, `/ig-comment`, `/ig-repurpose`, `/ig-affiliate`) | nicojunk/claude-ig | `5e9b2d9` | MIT | zum Texten nichts. Instagram-Zugang über Meta für Auswertungen |
+
+Sergejs Nachschlagewerk liegt in `.claude/references/`, sein Python-Unterbau in `.claude/lib/`. Nicos sechs Hilfs-Agenten liegen in `.claude/agents/`, seine Skripte in `.claude/skills/ig/scripts/`. In Nicos `ig/SKILL.md` zeigt der Pfad zum Nachschlagewerk jetzt auf dieses Repo statt auf `~/.claude`.
+
+Die beiden Sammlungen überschneiden sich, zum Beispiel gibt es zwei Caption-Skills und zwei Karussell-Skills. Das ist Absicht, so kannst du vergleichen, welcher dir besser liegt.

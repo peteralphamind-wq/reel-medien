@@ -7,3 +7,5 @@
 .claude/skills/edit-video/scripts/.env
 __pycache__/
 *.pyc
+
+.claude/lib/.env
